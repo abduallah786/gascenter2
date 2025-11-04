@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Madina Gas Center - Trusted Gas Supply & Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#f59e0b',
+                        accent: '#dc2626'
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-shadow-lg {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .flame-animation {
+            animation: flame 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes flame {
+            0% {
+                transform: scale(1) rotate(0deg);
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: scale(1.2) rotate(5deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(0.9) rotate(-5deg);
+                opacity: 0.8;
+            }
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+
+        .delay-700 {
+            animation-delay: 0.7s;
+        }
+
+        .delay-1000 {
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-slate-800 to-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-fire text-3xl text-secondary"></i>
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold">Al Madina Gas Center</h1>
+                        <p class="text-gray-300 text-sm">Trusted Name in Gas Supply & Services</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="bg-gradient-to-r from-yellow-500 to-orange-500 px-4 py-2 rounded-lg shadow-md">
+                        <div class="flex items-center space-x-2 text-black">
+                            <i class="fas fa-clock text-lg"></i>
+                            <div class="text-center">
+                                <p class="text-xs font-medium uppercase tracking-wide">Open Daily</p>
+                                <p class="text-sm font-bold">8:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="relative bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-800 text-white py-20 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-20 h-20 bg-white rounded-full animate-pulse"></div>
+            <div class="absolute top-32 right-20 w-16 h-16 bg-white rounded-full animate-pulse delay-1000"></div>
+            <div class="absolute bottom-20 left-1/4 w-12 h-12 bg-white rounded-full animate-pulse delay-500"></div>
+            <div class="absolute bottom-32 right-1/3 w-24 h-24 bg-white rounded-full animate-pulse delay-700"></div>
+        </div>
+
+        <!-- Flame Animation Background -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="flame-animation absolute top-1/4 left-1/4 w-8 h-8 bg-yellow-400 rounded-full animate-bounce">
+            </div>
+            <div
+                class="flame-animation absolute top-1/3 right-1/4 w-6 h-6 bg-orange-400 rounded-full animate-bounce delay-300">
+            </div>
+            <div
+                class="flame-animation absolute bottom-1/3 left-1/3 w-10 h-10 bg-red-400 rounded-full animate-bounce delay-600">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-6">
+                    <i class="fas fa-fire text-6xl md:text-7xl text-yellow-300 animate-pulse mb-4"></i>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 text-shadow-lg">
+                    Welcome to Al Madina Gas Center 🔥
+                </h2>
+                <p class="text-xl md:text-2xl mb-6 text-purple-100 font-medium">
+                    Your reliable partner for all types of gas cylinder needs in Mureedwala
+                </p>
+
+                <!-- Contact Number Display -->
+                <div class="mb-6">
+                    <div
+                        class="bg-gradient-to-r from-slate-800 to-gray-900 inline-block px-4 py-2 rounded-lg border border-yellow-400 shadow-lg hover:shadow-yellow-400/20 transition duration-300">
+                        <a href="tel:03477873858" class="text-white no-underline">
+                            <div class="text-center">
+                                <div class="flex items-center justify-center mb-1">
+                                    <i class="fas fa-phone text-yellow-400 text-sm mr-1"></i>
+                                    <span class="text-yellow-400 font-semibold text-xs uppercase tracking-wide">Call
+                                        Us</span>
+                                </div>
+                                <div class="text-lg md:text-xl font-bold text-white">
+                                    0347-7873858
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <button onclick="scrollToSection('services')"
+                        class="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-tools mr-2"></i>Our Services
+                    </button>
+                    <button onclick="scrollToSection('testimonials')"
+                        class="bg-transparent border-2 border-white hover:bg-white hover:text-purple-600 px-8 py-4 rounded-lg font-bold text-lg transition duration-300 shadow-lg">
+                        <i class="fas fa-star mr-2"></i>Customer Reviews
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Wave -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+            <svg class="relative block w-full h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    fill="#f9fafb"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Location & Owner Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-map-marker-alt text-3xl text-accent mr-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800">Our Location</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Al Madina Gas Center is situated on Gojra Road, Mureedwala, offering easy access to customers
+                        from nearby areas.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg border-l-4 border-primary">
+                        <p class="font-semibold text-primary">📍 Gojra Road, Mureedwala</p>
+                        <p class="text-sm text-gray-600 mt-1">Central location for easy access</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-primary to-blue-700 text-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-user-tie text-3xl text-secondary mr-4"></i>
+                        <h3 class="text-2xl font-bold">Owner</h3>
+                    </div>
+                    <p class="mb-4 text-blue-100">
+                        Under the dedicated supervision of Mr. Irshad Anwar, we've built a strong reputation for
+                        honesty, quality service, and customer care.
+                    </p>
+                    <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                        <p class="font-semibold text-secondary">👨‍💼 Mr. Irshad Anwar</p>
+                        <p class="text-sm text-blue-200 mt-1">Committed to excellence and customer satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">💨 Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    At Al Madina Gas Center, we provide a complete range of gas-related services
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div
+                    class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-center">
+                        <i class="fas fa-home text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Domestic & Commercial Supply</h3>
+                        <p class="text-gray-600">✅ Gas cylinder supply for homes and businesses</p>
+                    </div>
+                </div>
+
+                <div
+                    class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-center">
+                        <i class="fas fa-sync-alt text-4xl text-secondary mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Refilling & Replacement</h3>
+                        <p class="text-gray-600">✅ Quick and safe gas cylinder refilling services</p>
+                    </div>
+                </div>
+
+                <div
+                    class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-center">
+                        <i class="fas fa-tools text-4xl text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Quality Accessories</h3>
+                        <p class="text-gray-600">✅ High-quality cylinders and accessories</p>
+                    </div>
+                </div>
+
+                <div
+                    class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-center">
+                        <i class="fas fa-truck text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Home Delivery</h3>
+                        <p class="text-gray-600">✅ Convenient delivery service in selected areas</p>
+                    </div>
+                </div>
+
+                <div
+                    class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-center">
+                        <i class="fas fa-shield-alt text-4xl text-purple-600 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Safety Guidance</h3>
+                        <p class="text-gray-600">✅ Free safety guidance and customer support</p>
+                    </div>
+                </div>
+
+                <div
+                    class="service-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-center">
+                        <i class="fas fa-star text-4xl text-yellow-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Quality Assurance</h3>
+                        <p class="text-gray-600">✅ Gas sourced from trusted suppliers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">💎 Why Choose Al Madina Gas Center?</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div
+                    class="feature-card bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border-l-4 border-green-500">
+                    <i class="fas fa-lock text-2xl text-green-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">🔒 100% Safe & Reliable</h3>
+                    <p class="text-gray-600 text-sm">Reliable refilling process with strict safety standards</p>
+                </div>
+
+                <div
+                    class="feature-card bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border-l-4 border-blue-500">
+                    <i class="fas fa-dollar-sign text-2xl text-blue-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">💰 Competitive Pricing</h3>
+                    <p class="text-gray-600 text-sm">Affordable pricing without compromising quality</p>
+                </div>
+
+                <div
+                    class="feature-card bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border-l-4 border-purple-500">
+                    <i class="fas fa-clock text-2xl text-purple-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">🕒 Fast & Timely</h3>
+                    <p class="text-gray-600 text-sm">Quick service delivery when you need it most</p>
+                </div>
+
+                <div
+                    class="feature-card bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl border-l-4 border-orange-500">
+                    <i class="fas fa-users text-2xl text-orange-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">👨‍🔧 Experienced Staff</h3>
+                    <p class="text-gray-600 text-sm">Trained professionals ensuring quality service</p>
+                </div>
+
+                <div
+                    class="feature-card bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border-l-4 border-red-500">
+                    <i class="fas fa-handshake text-2xl text-red-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">🤝 Customer Satisfaction</h3>
+                    <p class="text-gray-600 text-sm">Guaranteed satisfaction with every service</p>
+                </div>
+
+                <div
+                    class="feature-card bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl border-l-4 border-indigo-500">
+                    <i class="fas fa-heart text-2xl text-indigo-600 mb-3"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">💝 Long-term Relations</h3>
+                    <p class="text-gray-600 text-sm">Building lasting relationships with our customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-blue-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">📦 Quality You Can Trust</h2>
+                <p class="text-xl mb-8 text-blue-100">
+                    Safety and quality are our top priorities. Every gas cylinder is properly checked, sealed, and
+                    tested before it reaches your home or business.
+                </p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+                        <i class="fas fa-check-circle text-3xl text-secondary mb-3"></i>
+                        <h3 class="font-bold mb-2">Properly Checked</h3>
+                        <p class="text-sm text-blue-200">Every cylinder undergoes thorough inspection</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+                        <i class="fas fa-seal text-3xl text-secondary mb-3"></i>
+                        <h3 class="font-bold mb-2">Safely Sealed</h3>
+                        <p class="text-sm text-blue-200">Secure sealing for maximum safety</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+                        <i class="fas fa-vial text-3xl text-secondary mb-3"></i>
+                        <h3 class="font-bold mb-2">Quality Tested</h3>
+                        <p class="text-sm text-blue-200">Rigorous testing before delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">⭐ What Our Customers Say</h2>
+                <p class="text-xl text-gray-600">Trusted by hundreds of families and businesses in Mureedwala and
+                    surrounding areas</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-500 text-lg">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4 italic">"Excellent service and very reliable. Al Madina Gas Center
+                            has been our go-to for gas cylinders for over 2 years. Always on time and fair prices."</p>
+                        <div class="flex items-center">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                                A
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Ahmed Hassan</p>
+                                <p class="text-sm text-gray-500">Local Resident</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-500 text-lg">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4 italic">"Mr. Irshad and his team provide outstanding customer
+                            service. The quality of gas cylinders is top-notch and delivery is always prompt."</p>
+                        <div class="flex items-center">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                                S
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Sadia Malik</p>
+                                <p class="text-sm text-gray-500">Restaurant Owner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-500 text-lg">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4 italic">"Best gas center in the area! Safe, reliable, and
+                            affordable. Their home delivery service is very convenient for our family."</p>
+                        <div class="flex items-center">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                                M
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Muhammad Ali</p>
+                                <p class="text-sm text-gray-500">Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistics Section -->
+                <div class="mt-16 grid md:grid-cols-4 gap-6 text-center">
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 text-white p-6 rounded-xl">
+                        <div class="text-3xl font-bold mb-2">500+</div>
+                        <p class="text-sm">Happy Customers</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-500 to-teal-600 text-white p-6 rounded-xl">
+                        <div class="text-3xl font-bold mb-2">10+</div>
+                        <p class="text-sm">Years of Service</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-orange-500 to-red-600 text-white p-6 rounded-xl">
+                        <div class="text-3xl font-bold mb-2">24/7</div>
+                        <p class="text-sm">Emergency Support</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-500 to-pink-600 text-white p-6 rounded-xl">
+                        <div class="text-3xl font-bold mb-2">100%</div>
+                        <p class="text-sm">Safety Guaranteed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-fire text-2xl text-secondary mr-3"></i>
+                <h3 class="text-xl font-bold">Al Madina Gas Center</h3>
+            </div>
+            <p class="text-gray-400 mb-4 max-w-2xl mx-auto">
+                "Your safety, our priority – delivering energy with care and trust."
+            </p>
+            <div class="border-t border-gray-700 pt-4">
+                <p class="text-sm text-gray-500">
+                    © 2024 Al Madina Gas Center. All rights reserved. | Gojra Road, Mureedwala
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-6 right-6">
+        <button onclick="scrollToTop()"
+            class="bg-primary hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition duration-300 transform hover:scale-110">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
